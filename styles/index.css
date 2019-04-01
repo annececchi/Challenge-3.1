@@ -39,7 +39,7 @@ h3 {
 	width: 100%;
 }
 
-/*groene blokken*/
+/*Groene blokken*/
 #landingAdvice, #weather {
 	background-color: #A5DC69;
 	border: 5px solid white;
@@ -86,7 +86,7 @@ h3 {
 
 /*Afbeelding bij advies*/
 #image {
-	height: 230px;
+	max-height: 230px;
 	width: 70%;
 	border-radius: 5px;
 	margin-left: 15%;
