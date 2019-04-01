@@ -1,0 +1,151 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	color: white;
+	background-color: #78D2FA;
+	font-family: Arial;
+}
+
+/*Tekst centreren*/
+h1, h2, h3, #temp, #advies, p{
+	text-align: center;
+}
+
+/*Titel in iets naar beneden*/
+h1 {
+	padding-top: 50px;
+}
+
+h2 {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	font-size: 20px;
+}
+
+h3 {
+	margin-top: 70px;
+	margin-bottom: 20px;
+}
+
+/*SVG positioneren*/
+#planet {
+	margin: 55px auto;
+	height: 70px;
+	width: 100%;
+}
+
+/*groene blokken*/
+#landingAdvice, #weather {
+	background-color: #A5DC69;
+	border: 5px solid white;
+	border-radius: 7px;
+	width: 40%;
+	height: 400px;
+	padding: 10px;
+}
+
+#temp {
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+#advies {
+	font-size: 17px;
+}
+
+/*Positionering groene blokken*/
+#landingAdvice {
+	grid-area: advice;
+}
+
+#weather {
+	grid-area: weather;
+}
+
+#wrapper {
+    display: flex;
+	justify-content: space-around;
+    grid-template-columns: 2fr;
+    grid-auto-rows: minmax(450px, auto);
+    grid-template-areas: 
+    "advice weather";
+}
+
+/*Teskt kleur landingsadvies*/
+.no #answer {
+	color: red;
+}
+.yes #answer{
+	color: green;
+}
+
+/*Afbeelding bij advies*/
+#image {
+	height: 230px;
+	width: 70%;
+	border-radius: 5px;
+	margin-left: 15%;
+}
+
+
+										/*TABLET*/
+
+
+
+@media only screen and (min-width: 768px){
+
+#planet {
+	height: 80px;
+}
+
+h2 {
+	font-size: 22px;
+}
+
+#advies {
+	font-size: 18px;
+}
+
+}
+
+                                        /*LAPTOP*/
+
+
+
+@media only screen and (min-width: 1366px) {
+
+#planet {
+	height: 90px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+#advies {
+	font-size: 19px;
+}
+}
+
+                                        /*DESKTOP*/
+
+
+@media only screen and (min-width: 1920px) {
+
+#planet {
+	height: 100px;
+}
+
+h2 {
+	font-size: 26px;
+}
+
+#advies {
+	font-size: 20px;
+}
+}
